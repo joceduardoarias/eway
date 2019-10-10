@@ -1,0 +1,16 @@
+﻿@*usamos un ViewBagobjeto para pasar datos del controlador a una vista.*@
+
+@{
+    ViewBag.Title = "Welcome";
+}
+
+<h2>Welcome</h2>
+
+<ul>
+    @for (int i = 0; i < ViewBag.NumTimes; i++)
+    {
+        <li>@ViewBag.Message</li>
+    }
+</ul>
+
+
